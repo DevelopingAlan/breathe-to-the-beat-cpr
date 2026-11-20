@@ -1,0 +1,384 @@
+body {
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(
+        135deg,
+        #87ceeb 0%,
+        #90ee90 12.5%,
+        #87ceeb 25%,
+        #90ee90 37.5%,
+        #87ceeb 50%,
+        #90ee90 62.5%,
+        #87ceeb 75%,
+        #90ee90 87.5%,
+        #87ceeb 100%
+    );
+    background-attachment: scroll;
+    min-height: 100vh;
+    color: #2d3748
+    }
+
+body::before {
+    background-image: url("assets/b2b-cpr-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    content: "";
+    inset: 0;
+    opacity: 0.12;
+    pointer-events: none;
+    position: fixed;
+    z-index: 0;
+}
+
+:target {
+    scroll-margin-top: 6.5rem;
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: "Nunito Sans", sans-serif
+    }
+/* Header Nav Links center-outward underline animation & color transform */
+.nav-link {
+    position: relative;
+    color: #fa8072;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color 0.3s ease
+    }
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #00fa9a;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translatex(-50%)
+    }
+.nav-link:hover {
+    color: #00fa9a !important
+    }
+.nav-link:hover::after {
+    width: 100%
+    }
+/* Landing Page 1-second fade in */
+@keyframes fadeInLanding {
+    0% {
+        opacity: 0;
+        transform: translateY(12px);
+        } 100% {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+.fade-in-hero {
+    animation: fadeInLanding 1s cubic-bezier(0.16, 1, 0.3, 1) forwards
+    }
+/* Button 1: Left CTA */
+.btn-book {
+    color: #a7ee90;
+    background-color: #27c1e0;
+    border: 1px solid #a7ee90;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease
+    }
+.btn-book:hover {
+    color: #00bfff !important;
+    background-color: #a7ee90;
+    border-color: #00bfff !important;
+    box-shadow: 0 8px 20px -4px rgba(144, 238, 144, 0.6)
+    }
+/* Button 2: Right CTA */
+.btn-interest {
+    color: #fa8072;
+    background-color: #90ee90;
+    border: 1px solid #fa8072;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease
+    }
+.btn-interest:hover {
+    color: #98fb98;
+    background-color: #fa8072;
+    border-color: #98fb98;
+    box-shadow: 0 8px 20px -4px rgba(250, 128, 114, 0.6)
+    }
+
+.landing-cta:hover {
+    transform: scale(1.03);
+}
+
+/* Form Dynamic Submit button */
+.btn-submit {
+    color: #4166f5;
+    background-color: #98fb98;
+    border: 2px solid #4166f5;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.3s ease
+    }
+.btn-submit:hover {
+    color: #98fb98;
+    background-color: #4166f5;
+    border-color: #98fb98;
+    transform: translatey(-2px);
+    box-shadow: 0 8px 20px rgba(65, 102, 245, 0.35)
+    }
+/* Form element styles */
+.form-input {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1.5px solid #87cefa;
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s
+    }
+.form-input:focus {
+    outline: none;
+    border-color: #4166f5;
+    box-shadow: 0 0 0 3px rgba(65, 102, 245, 0.2)
+    }
+.custom-checkbox, .custom-radio {
+    accent-color: #4166f5
+    }
+/* Glass card containers */
+.glass-card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 30px -5px rgba(0, 50, 100, 0.08);
+    border-radius: 1.25rem
+    }
+/* Image fallback decoration */
+.img-frame {
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.15);
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    object-fit: cover
+    }
+
+.uncropped-photo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-height: 80vh;
+    max-width: 100%;
+    object-fit: contain;
+    width: auto;
+}
+
+.form-status {
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    padding: 0.85rem 1rem;
+}
+
+.form-status[hidden] {
+    display: none;
+}
+
+.form-status[data-state="pending"] {
+    background: #eff6ff;
+    border-color: #93c5fd;
+    color: #1e40af;
+}
+
+.form-status[data-state="success"] {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.form-status[data-state="error"] {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: #991b1b;
+}
+
+header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+}
+
+header nav > * + * {
+    margin-left: 0;
+}
+
+.header-inner {
+    height: 5rem;
+    position: relative;
+}
+
+.header-logo {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-menu-toggle {
+    background: #4166f5;
+    cursor: pointer;
+    height: 2.75rem;
+    margin-left: auto;
+    padding: 0;
+    width: 2.75rem;
+}
+
+.mobile-menu-toggle:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+.close-icon,
+.mobile-menu-toggle[aria-expanded="true"] .menu-icon {
+    display: none;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .close-icon {
+    display: block;
+}
+
+.mobile-menu {
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.2);
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 100%;
+}
+
+.language-select {
+    background: #90ee90;
+    border: 1px solid #fa8072;
+    border-radius: 0.5rem;
+    color: #fa8072;
+    font: 600 0.875rem "Quicksand", sans-serif;
+    max-width: 100%;
+    min-height: 2.5rem;
+    padding: 0.4rem 1.75rem 0.4rem 0.65rem;
+}
+
+.desktop-nav {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.desktop-language-select {
+    flex-shrink: 0;
+}
+
+.mobile-language-control {
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem 0.75rem;
+}
+
+.mobile-menu[hidden] {
+    display: none;
+}
+
+header .mobile-menu nav {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    justify-content: initial;
+}
+
+.mobile-menu .nav-link {
+    border-bottom: 1px solid #e5e7eb;
+    color: #4166f5;
+    display: block;
+    padding: 0.75rem 0.5rem;
+}
+
+.mobile-menu .nav-link:last-child {
+    border-bottom: 0;
+}
+
+.mobile-menu .nav-link::after {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    header .header-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        justify-content: stretch;
+        position: relative;
+    }
+
+    .desktop-language-select {
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .desktop-nav-left {
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: space-between;
+        column-gap: 1.5rem;
+        padding-left: calc(7.0625rem + 1.5rem);
+        padding-right: 1.5rem;
+    }
+
+    .header-logo {
+        grid-column: 2;
+        grid-row: 1;
+        left: auto;
+        position: static;
+        justify-self: center;
+        top: auto;
+        transform: none;
+    }
+
+    .desktop-nav-right {
+        grid-column: 3;
+        grid-row: 1;
+        justify-content: flex-start;
+        column-gap: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    html[lang="es"] .desktop-nav-left {
+        justify-content: center;
+        column-gap: 1rem;
+        font-size: 0.9375rem;
+        padding-left: 7.0625rem;
+        padding-right: 0;
+    }
+
+    .mobile-menu,
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
+.btn-submit:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

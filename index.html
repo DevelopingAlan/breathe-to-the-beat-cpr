@@ -1,0 +1,2979 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="Friendly, hands-on CPR, First Aid, and AED training in Somerville, Massachusetts."
+    />
+    <title>Breathe to the Beat Community CPR</title>
+    <!-- Google Fonts: Nunito Sans & Quicksand -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ['"Nunito Sans"', "sans-serif"],
+              body: ['"Quicksand"', "sans-serif"],
+            },
+            colors: {
+              skyBlue: "#87ceeb",
+              lightGreen: "#90ee90",
+              cornflower: "#6495ed",
+              coralPink: "#fa8072",
+              mintHover: "#00fa9a",
+              primaryBlue: "#4166f5",
+              limeGreen: "#32cd32",
+              buttonSky: "#87cefa",
+              buttonMint: "#98fb98",
+            },
+          },
+        },
+      };
+    </script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="relative">
+    <!-- Master Page Wrapper -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <!-- ==================== HEADER ==================== -->
+      <header
+        class="sticky top-0 z-50 shadow-md backdrop-blur-md"
+        style="background-color: #6495ed"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div class="header-inner flex items-center justify-between">
+            <select
+              aria-label="Select language"
+              class="language-select desktop-language-select hidden xl:block order-0"
+              data-language-selector
+            >
+              <option value="en">English</option>
+              <option value="es">Español</option>
+            </select>
+            <!-- Left 3 Links -->
+            <nav
+              aria-label="Main navigation"
+              class="desktop-nav desktop-nav-left hidden xl:flex items-center order-2 xl:order-1 font-heading text-base flex-1"
+            >
+              <a
+                class="nav-link"
+                href="#who-we-are"
+                style="border: 2px solid transparent"
+                >Who We Are</a
+              >
+              <a
+                class="nav-link"
+                href="#services"
+                style="border: 2px solid transparent"
+                >Services</a
+              >
+              <a
+                class="nav-link"
+                href="#contact-us"
+                style="border: 2px solid transparent"
+                >Contact Us</a
+              >
+              <a
+                class="nav-link"
+                href="#footer"
+                style="border: 2px solid transparent"
+                >Socials</a
+              >
+            </nav>
+            <!-- Center Logo -->
+            <div class="header-logo order-1 xl:order-2 flex-shrink-0">
+              <a
+                class="block transition-transform hover:scale-105 duration-200"
+                href="#landing"
+              >
+                <img
+                  alt="Breathe to the Beat Community CPR Logo"
+                  class="h-20 w-auto object-contain filter drop-shadow"
+                  src="assets/b2b-cpr-logo.png"
+                />
+              </a>
+            </div>
+            <!-- Right 3 Links -->
+            <nav
+              aria-label="Policies and resources"
+              class="desktop-nav desktop-nav-right hidden xl:flex items-center order-3 font-heading text-base flex-1"
+            >
+              <a
+                class="nav-link"
+                href="#privacy-policy"
+                style="border: 2px solid transparent"
+                >Privacy Policy</a
+              >
+              <a
+                class="nav-link"
+                href="#refund-policy"
+                style="border: 2px solid transparent"
+                >Refund Policy</a
+              >
+              <a
+                class="nav-link"
+                href="#community-resources"
+                style="border: 2px solid transparent"
+                >Community Resources</a
+              >
+            </nav>
+            <button
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              aria-label="Open navigation menu"
+              class="mobile-menu-toggle order-2 inline-flex xl:hidden items-center justify-center rounded-lg border-2 border-white/70 text-white"
+              id="mobileMenuToggle"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="menu-icon h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="close-icon h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="m6 6 12 12M18 6 6 18"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu" hidden id="mobileMenu">
+          <div class="mobile-language-control">
+            <select
+              aria-label="Select language"
+              class="language-select"
+              data-language-selector
+            >
+              <option value="en">English</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+          <nav aria-label="Main navigation">
+            <a class="nav-link" href="#who-we-are">Who We Are</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link" href="#footer">Socials</a>
+            <a class="nav-link" href="#privacy-policy">Privacy Policy</a>
+            <a class="nav-link" href="#refund-policy">Refund Policy</a>
+            <a class="nav-link" href="#community-resources"
+              >Community Resources</a
+            >
+          </nav>
+        </div>
+      </header>
+      <!-- ==================== MAIN CONTENT ==================== -->
+      <main class="flex-grow">
+        <!-- 1. LANDING PAGE SECTION -->
+        <section
+          class="pt-12 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
+          id="landing"
+        >
+          <div class="glass-card p-6 sm:p-10 md:p-12 text-center fade-in-hero">
+            <!-- Heading -->
+            <h1
+              class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-tight mb-6"
+              style="color: #4166f5"
+            >
+              Breathe to the Beat Community CPR
+            </h1>
+            <div class="my-6 w-full max-w-2xl mx-auto">
+              <img
+                alt="Breathe to the Beat CPR Class"
+                class="uncropped-photo img-frame"
+                src="assets/landing-hero.JPG"
+              />
+            </div>
+            <!-- Hero Image -->
+
+            <!-- Subheading -->
+            <h2
+              class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl mb-4"
+              style="color: #32cd32"
+            >
+              Learn CPR. Save a Life. It takes 2-4 hours.
+            </h2>
+            <!-- Paragraph Text -->
+            <p
+              class="font-body text-lg sm:text-xl font-medium max-w-2xl mx-auto mb-8"
+              style="color: #fa8072"
+            >
+              Learn to save a life in 2-4 hours. No pressure, just practice,
+              leave with confidence.
+            </p>
+            <!-- Side-by-Side Visually Distinct CTA Buttons -->
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6"
+            >
+              <a
+                class="btn-book landing-cta px-8 py-3.5 text-base sm:text-lg tracking-wide inline-flex items-center justify-center w-full md:w-72"
+                href="https://b2bcprbooking.as.me/schedule/0dc2fc04/appointment/67374249/calendar/10576561"
+                rel="noopener noreferrer"
+                target="_blank"
+                style="
+                  color: rgb(0, 230, 118);
+                  border: 2px solid rgb(0, 230, 118);
+                  background-color: rgb(0, 191, 255);
+                  text-shadow: none;
+                  border-radius: 16px;
+                "
+                onmouseover="
+                  this.style.color = '#87cefa';
+                  this.style.backgroundColor = '#00e676';
+                  this.style.borderColor = '#87cefa';
+                  this.style.boxShadow =
+                    '0 8px 20px -4px rgba(0, 230, 118, 0.6)';
+                "
+                onmouseout="
+                  this.style.color = '#00e676';
+                  this.style.backgroundColor = '#00bfff';
+                  this.style.borderColor = '#00e676';
+                  this.style.boxShadow = 'none';
+                "
+              >
+                Book a class now!
+              </a>
+              <a
+                class="btn-interest landing-cta px-8 py-3.5 text-base sm:text-lg tracking-wide inline-flex items-center justify-center w-full md:w-72"
+                href="#interest-form"
+                style="border-width: 2px; border-radius: 16px"
+              >
+                Fill out Interest Form
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- 2. WHAT TO EXPECT SECTION -->
+        <section
+          class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
+          id="what-to-expect"
+        >
+          <div class="glass-card p-6 sm:p-10 md:p-12">
+            <div class="text-center md:text-left mb-8">
+              <!-- Large header in black text -->
+              <h2
+                class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-black mb-3"
+              >
+                What to Expect
+              </h2>
+              <!-- Subheading -->
+              <p
+                class="font-heading text-lg sm:text-xl text-gray-700 font-semibold"
+                style="color: rgb(250, 128, 114)"
+              >
+                No lectures, no judgment — just clear, hands-on training you'll
+                actually remember
+              </p>
+            </div>
+            <!-- Content Grid: 4 Stacked text blocks on left, Image on right -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-7 space-y-5">
+                <div
+                  class="bg-white/70 p-4 sm:p-5 rounded-xl border border-white/60 shadow-sm transition-transform hover:-translate-y-0.5"
+                >
+                  <div class="flex items-start gap-3">
+                    <div
+                      class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0 mt-0.5"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        data-lucide="activity"
+                        class="lucide lucide-activity w-4 h-4"
+                      >
+                        <path
+                          d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-heading font-bold text-gray-900 text-lg">
+                        Practice, not just theory
+                      </h4>
+                      <p class="font-body text-gray-700 text-base mt-1">
+                        You'll get real time on mannequins and AED trainers, so
+                        the steps feel natural when it matters.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-white/70 p-4 sm:p-5 rounded-xl border border-white/60 shadow-sm transition-transform hover:-translate-y-0.5"
+                >
+                  <div class="flex items-start gap-3">
+                    <div
+                      class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0 mt-0.5"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        data-lucide="smile"
+                        class="lucide lucide-smile w-4 h-4"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                        <line x1="9" x2="9.01" y1="9" y2="9"></line>
+                        <line x1="15" x2="15.01" y1="9" y2="9"></line>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-heading font-bold text-gray-900 text-lg">
+                        Beginner-friendly
+                      </h4>
+                      <p class="font-body text-gray-700 text-base mt-1">
+                        Everyone starts somewhere. You'll leave feeling
+                        confident, not overwhelmed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-white/70 p-4 sm:p-5 rounded-xl border border-white/60 shadow-sm transition-transform hover:-translate-y-0.5"
+                >
+                  <div class="flex items-start gap-3">
+                    <div
+                      class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 flex-shrink-0 mt-0.5"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        data-lucide="layers"
+                        class="lucide lucide-layers w-4 h-4"
+                      >
+                        <path
+                          d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
+                        ></path>
+                        <path
+                          d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"
+                        ></path>
+                        <path
+                          d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-heading font-bold text-gray-900 text-lg">
+                        A class for your needs
+                      </h4>
+                      <p class="font-body text-gray-700 text-base mt-1">
+                        Choose from Adult, Pediatric &amp; Infant CPR/AED, and
+                        First Aid courses, from 2 to 4 hours depending on the
+                        class. Hybrid available too.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-white/70 p-4 sm:p-5 rounded-xl border border-white/60 shadow-sm transition-transform hover:-translate-y-0.5"
+                >
+                  <div class="flex items-start gap-3">
+                    <div
+                      class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0 mt-0.5"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        data-lucide="award"
+                        class="lucide lucide-award w-4 h-4"
+                      >
+                        <path
+                          d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                        ></path>
+                        <circle cx="12" cy="8" r="6"></circle>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-heading font-bold text-gray-900 text-lg">
+                        Certified instructors
+                      </h4>
+                      <p class="font-body text-gray-700 text-base mt-1">
+                        Trained and current, here to answer questions and make
+                        you comfortable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Image on the right -->
+              <div class="lg:col-span-5">
+                <img
+                  alt="Hands-on CPR Training Session"
+                  class="uncropped-photo img-frame"
+                  src="assets/what-to-expect-photo.JPG"
+                />
+              </div>
+            </div>
+            <!-- Bottom Italicized prompt text -->
+            <div class="mt-8 pt-6 border-t border-gray-200/70 text-center">
+              <p
+                class="font-body italic text-gray-800 text-base sm:text-lg max-w-3xl mx-auto"
+              >
+                Not sure which class is right for you? Fill out the class
+                interest form below and we'll help you find the fit. Or, keep
+                scrolling down to read more about what we offer!
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- 3. CLASS INTEREST FORM SECTION -->
+        <section
+          class="py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
+          id="interest-form"
+        >
+          <div class="glass-card p-6 sm:p-10 md:p-12">
+            <!-- Header and Description -->
+            <div class="mb-8">
+              <h2
+                class="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-3"
+                style="color: #4166f5"
+              >
+                Breathe to the Beat Community CPR Class Interest Form
+              </h2>
+              <p
+                class="font-body text-gray-700 text-base sm:text-lg"
+                style="color: rgb(250, 128, 114)"
+              >
+                Sign up to be notified and register for future CPR and First Aid
+                training classes offered by Breathe to the Beat Community CPR.
+              </p>
+            </div>
+            <!-- Integrated HTML Form configured to mailto Kayla@b2bcpr.net -->
+            <form class="space-y-6" id="interestForm">
+              <input
+                type="hidden"
+                name="subject"
+                value="New Class Interest Form"
+              />
+              <p
+                class="form-status"
+                data-form-status
+                aria-live="polite"
+                role="status"
+                hidden
+              ></p>
+              <!-- Prompt 1: First Name (required) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-1"
+                  for="interest-first-name"
+                >
+                  First Name: <span class="text-red-500">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  id="interest-first-name"
+                  name="first_name"
+                  placeholder="Your first name"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <!-- Prompt 2: Email (required) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-0.5"
+                  for="interest-email"
+                >
+                  Email: <span class="text-red-500">*</span>
+                </label>
+                <p class="font-body italic text-gray-600 text-sm mb-1.5">
+                  We'll never share it - just sending class info and drawing
+                  results.
+                </p>
+                <input
+                  class="form-input"
+                  id="interest-email"
+                  name="email"
+                  placeholder="youremail@example.com"
+                  required=""
+                  type="email"
+                />
+              </div>
+              <!-- Prompt 3: Phone Number (optional) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-0.5"
+                  for="interest-phone"
+                >
+                  Phone Number (in case we need to contact you quickly)
+                </label>
+                <p class="font-body italic text-gray-600 text-sm mb-1.5">
+                  Only if you want a text reminder about upcoming classes.
+                </p>
+                <input
+                  class="form-input"
+                  id="interest-phone"
+                  name="phone"
+                  placeholder="(857) 000-0000"
+                  type="tel"
+                />
+              </div>
+              <!-- Prompt 4: Which best describes you? (required, single select) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-2"
+                >
+                  Which best describes you? <span class="text-red-500">*</span>
+                </label>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer border border-transparent hover:border-blue-200 transition-colors"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="desc_you"
+                      required=""
+                      type="radio"
+                      value="I'm brand new to CPR - never taken a class"
+                    />
+                    <span class="font-body text-gray-800"
+                      >I'm brand new to CPR - never taken a class</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer border border-transparent hover:border-blue-200 transition-colors"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="desc_you"
+                      type="radio"
+                      value="I'm certified but need a renewal"
+                    />
+                    <span class="font-body text-gray-800"
+                      >I'm certified but need a renewal</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer border border-transparent hover:border-blue-200 transition-colors"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="desc_you"
+                      type="radio"
+                      value="I just want to learn hands-only CPR basics"
+                    />
+                    <span class="font-body text-gray-800"
+                      >I just want to learn hands-only CPR basics</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer border border-transparent hover:border-blue-200 transition-colors"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="desc_you"
+                      type="radio"
+                      value="I'm looking for group/team training for my workplace or org"
+                    />
+                    <span class="font-body text-gray-800"
+                      >I'm looking for group/team training for my workplace or
+                      org</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer border border-transparent hover:border-blue-200 transition-colors"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="desc_you"
+                      type="radio"
+                      value="Just here for the fun - but interested!"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Just here for the fun - but interested!</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- Prompt 5: Which topics interest you most? (required, multi-select + other text) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-2"
+                >
+                  Which topics interest you most?
+                  <span class="text-red-500">*</span>
+                  <span class="text-sm font-normal text-gray-600"
+                    >(Select all that apply)</span
+                  >
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="Adult &amp; Child CPR"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Adult &amp; Child CPR</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="Infant CPR"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Infant CPR</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="AED training"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >AED (Automated External Defibrillator) training</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="Choking response"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Choking response</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="Narcan / overdose response"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Narcan / overdose response</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="Stop the Bleed / bleeding control"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Stop the Bleed / bleeding control</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="First Aid basics"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >First Aid basics</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="topics"
+                      type="checkbox"
+                      value="I'm not sure yet - just exploring"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >I'm not sure yet - just exploring</span
+                    >
+                  </label>
+                </div>
+                <div
+                  class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60"
+                >
+                  <input
+                    class="custom-checkbox w-4 h-4"
+                    id="topic-other-check"
+                    name="topics"
+                    type="checkbox"
+                    value="Other"
+                  />
+                  <label
+                    class="font-body text-gray-800 font-medium"
+                    for="topic-other-check"
+                    >Other:</label
+                  >
+                  <input
+                    class="form-input py-1 text-sm flex-1"
+                    id="topic-other-text"
+                    name="topic_other"
+                    placeholder="Please specify..."
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- Prompt 6: Preferred class setting (required) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-2"
+                >
+                  What is your preferred class setting?
+                  <span class="text-red-500">*</span>
+                </label>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="setting"
+                      required=""
+                      type="radio"
+                      value="Public Class (held at partner facility)"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Public Class (held at partner facility)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="setting"
+                      type="radio"
+                      value="On-site Private Group Training (at your location)"
+                    />
+                    <span class="font-body text-gray-800"
+                      >On-site Private Group Training (at your location)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="setting"
+                      type="radio"
+                      value="Virtual/Online Only (for non-certification portions)"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Virtual/Online Only (for non-certification
+                      portions)</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- Prompt 7: Which days of the week work best (required, multi-select) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-2"
+                >
+                  Which days of the week work best for your training?
+                  <span class="text-red-500">*</span>
+                </label>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="days"
+                      type="checkbox"
+                      value="Weekdays (Mon-Fri)"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Weekdays (Mon-Fri)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="days"
+                      type="checkbox"
+                      value="Weeknights (Mon-Thu Evenings)"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Weeknights (Mon-Thu Evenings)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="days"
+                      type="checkbox"
+                      value="Weekends (Saturday/Sunday)"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Weekends (Saturday/Sunday)</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- Prompt 8: Number of individuals (required) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-1"
+                  for="num-individuals"
+                >
+                  Approximately how many individuals will you be signing up for
+                  (including yourself)? <span class="text-red-500">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  id="num-individuals"
+                  name="num_individuals"
+                  placeholder="e.g. 1, 5, or 12"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <!-- Prompt 9: How soon (required) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-2"
+                >
+                  How soon are you looking to take a class?
+                  <span class="text-red-500">*</span>
+                </label>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="timing"
+                      required=""
+                      type="radio"
+                      value="Within the next month"
+                    />
+                    <span class="font-body text-gray-800"
+                      >Within the next month</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="timing"
+                      type="radio"
+                      value="1-3 months"
+                    />
+                    <span class="font-body text-gray-800">1-3 months</span>
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="timing"
+                      type="radio"
+                      value="3-6 months"
+                    />
+                    <span class="font-body text-gray-800">3-6 months</span>
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="timing"
+                      type="radio"
+                      value="More than 6 months / flexible"
+                    />
+                    <span class="font-body text-gray-800"
+                      >More than 6 months / flexible</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- Prompt 10: Age requirement (required) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-0.5"
+                >
+                  All participants will be 18 years old or older by time of
+                  class <span class="text-red-500">*</span>
+                </label>
+                <p class="font-body text-gray-600 text-sm mb-2">
+                  All participants need to be at least 18 years of age or older
+                  at time of class. If they are not, let's have a conversation
+                  and fill out a permission slip.
+                </p>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="age_confirm"
+                      required=""
+                      type="radio"
+                      value="Yes, of course. You have my word."
+                    />
+                    <span class="font-body text-gray-800"
+                      >Yes, of course. You have my word.</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-radio w-4 h-4"
+                      name="age_confirm"
+                      type="radio"
+                      value="Still under 18. Need a chat and permission slip."
+                    />
+                    <span class="font-body text-gray-800"
+                      >Still under 18. Need a chat and permission slip.</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- Prompt 11: How did you hear (optional, multi-select) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-2"
+                >
+                  How did you hear about Breathe to the Beat Community CPR?
+                  <span class="text-sm font-normal text-gray-600"
+                    >(Optional)</span
+                  >
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="referral"
+                      type="checkbox"
+                      value="Social Media (Facebook, Instagram, etc.)"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Social Media (Facebook, Instagram, etc.)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="referral"
+                      type="checkbox"
+                      value="Search Engine (Google, Bing, etc.)"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Search Engine (Google, Bing, etc.)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="referral"
+                      type="checkbox"
+                      value="Referral from a friend/colleague"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Referral from a friend/colleague</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="referral"
+                      type="checkbox"
+                      value="Local Community Event"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Local Community Event</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="referral"
+                      type="checkbox"
+                      value="Website/Online Ad"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Website/Online Ad</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-center gap-2.5 p-2 rounded-lg bg-white/60 hover:bg-white cursor-pointer"
+                  >
+                    <input
+                      class="custom-checkbox w-4 h-4"
+                      name="referral"
+                      type="checkbox"
+                      value="Other"
+                    />
+                    <span class="font-body text-gray-800 text-sm sm:text-base"
+                      >Other</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- Prompt 12: Specific questions (optional) -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-0.5"
+                  for="specific-questions"
+                >
+                  Do you have any specific questions or additional requirements
+                  for your training?
+                </label>
+                <p class="font-body text-gray-600 text-sm mb-2">
+                  Once I receive this form, I will contact you with a quote for
+                  your class. Thank you for your interest. I will be in touch
+                  shortly!
+                </p>
+                <textarea
+                  class="form-input"
+                  id="specific-questions"
+                  name="questions"
+                  placeholder="Enter any notes, timing preferences, or group details..."
+                  rows="3"
+                ></textarea>
+              </div>
+              <!-- Bottom Right Submit Button -->
+              <div class="flex justify-end pt-4">
+                <button
+                  class="btn-submit px-8 py-3 text-lg cursor-pointer"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- 4. "WHO WE ARE" SECTION -->
+        <section
+          class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
+          id="who-we-are"
+        >
+          <div class="glass-card p-6 sm:p-10 md:p-12 space-y-12">
+            <div class="text-center md:text-left">
+              <h2
+                class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-2"
+                style="color: #4166f5"
+              >
+                Who We Are
+              </h2>
+              <div class="h-1 w-20 bg-coralPink rounded-full mb-6"></div>
+            </div>
+            <!-- Sub-part 1: Text Left, Image Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div
+                class="lg:col-span-7 space-y-4 font-body text-gray-800 text-base sm:text-lg leading-relaxed"
+              >
+                <h3 class="font-heading font-bold text-2xl text-gray-900">
+                  Hello, Kay here!
+                </h3>
+                <p>
+                  I am the founding owner and lead instructor of Breathe to the
+                  Beat Community CPR based in Somerville, MA. I decided to take
+                  my love of teaching in early education and participation in
+                  over 20 American Red Cross CPR/AED/First Aid classes to create
+                  a business that focuses on the collaboration between
+                  instructor and participants.
+                </p>
+                <p>
+                  One of my goals is to create a community with my classes. A
+                  community of inclusion, safety, kindness, and preparedness.
+                </p>
+                <p>
+                  I follow the American Red Cross curriculum, just with my own
+                  teaching style sprinkled in. It is a personal passion to work
+                  with participants to achieve their goals and work together to
+                  overcome obstacles. My favorite moments in class are when the
+                  atmosphere goes from stuffy and awkward at the start of what
+                  everyone thinks is going to be a boring class, to a jovial and
+                  relaxed atmosphere where the class becomes its own entity.
+                </p>
+              </div>
+              <div class="lg:col-span-5">
+                <img
+                  alt="Kayla - Founder and Lead Instructor"
+                  class="uncropped-photo img-frame"
+                  src="assets/kay-founder-photo.jpg"
+                />
+              </div>
+            </div>
+            <!-- Sub-part 2: Positions Reversed (Image Left, Text Right) -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8 border-t border-gray-200/80"
+            >
+              <div class="lg:col-span-5 order-2 lg:order-1">
+                <img
+                  alt="Instructor observing students practicing infant CPR"
+                  class="uncropped-photo img-frame"
+                  src="assets/community-cpr-training-photo.jpeg"
+                />
+              </div>
+              <div
+                class="lg:col-span-7 order-1 lg:order-2 space-y-4 font-body text-gray-800 text-base sm:text-lg leading-relaxed"
+              >
+                <p>
+                  To put this a different way, every class has common elements
+                  like course materials and required content that needs to
+                  appear each time. What makes every class different is YOU!
+                  Each participant brings their own experience, perspective, and
+                  knowledge. This is where the magic of community lives in each
+                  class. Let’s extend this community beyond class and continue
+                  these wonderful conversations. Consider visiting our social
+                  media pages and let us continue to build the B2B community.
+                </p>
+                <div
+                  class="p-4 bg-sky-50/80 border-l-4 border-cornflower rounded-r-lg"
+                >
+                  <p class="font-medium text-gray-900">
+                    One of the trademarks of a B2B class is having a CPR
+                    playlist play while participants perform CPR. It helps keep
+                    rhythm and allows us all to have fun, while learning serious
+                    life-saving skills!
+                  </p>
+                </div>
+                <p>
+                  If this sounds interesting to you, please reach out in
+                  whatever way feels most comfortable for you! You can call or
+                  text
+                  <a
+                    class="font-bold underline text-blue-700"
+                    href="tel:8572617839"
+                    >857-261-7839</a
+                  >, fill out the class interest form on this website, email
+                  <a
+                    class="font-bold underline text-blue-700"
+                    href="mailto:kayla@b2bcpr.net"
+                    >kayla@b2bcpr.net</a
+                  >, or interact with our various social media pages which can
+                  be found at the top right of this page. I look forward to
+                  speaking with and learning from you all!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 5. SERVICES SECTION -->
+        <section
+          class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
+          id="services"
+        >
+          <div class="glass-card p-6 sm:p-10 md:p-12 space-y-12">
+            <div class="text-center md:text-left">
+              <h2
+                class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-2"
+                style="color: #4166f5"
+              >
+                Services
+              </h2>
+              <div class="h-1 w-20 bg-limeGreen rounded-full mb-6"></div>
+            </div>
+            <!-- Service 1: Image on Left, Subheader/Text on Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-5 order-2 lg:order-2">
+                <img
+                  alt="Instructors guiding infant CPR practice"
+                  class="uncropped-photo img-frame"
+                  src="assets/services-photo-3.jpeg"
+                />
+              </div>
+              <div class="lg:col-span-7 space-y-3 order-1 lg:order-1">
+                <h3
+                  class="font-heading font-extrabold text-2xl sm:text-3xl text-gray-900"
+                >
+                  Adult and Pediatric First Aid/CPR/AED (In-Person &amp; Hybrid)
+                </h3>
+                <p
+                  class="font-body text-gray-800 text-base sm:text-lg leading-relaxed"
+                >
+                  This is the most popular class, especially for child care
+                  staff and youth workers.
+                </p>
+                <p
+                  class="font-body text-gray-800 text-base sm:text-lg leading-relaxed"
+                >
+                  Most state licensing agencies and private organizations
+                  require their staff to be certified annually or bi-annually.
+                  American Red Cross certificates are in good standing for two
+                  years.
+                </p>
+                <p
+                  class="font-body text-gray-800 text-base sm:text-lg font-semibold text-blue-800"
+                >
+                  Let’s set up a class at your agency to maintain your staff
+                  members’ certifications!
+                </p>
+              </div>
+            </div>
+            <!-- Service 2: Image on Left, Subheader/Text on Right -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8 border-t border-gray-200/80"
+            >
+              <div class="lg:col-span-5 order-1 lg:order-1">
+                <img
+                  alt="CPR practice with an infant mannequin"
+                  class="uncropped-photo img-frame"
+                  src="assets/services-photo-2.jpeg"
+                />
+              </div>
+              <div class="lg:col-span-7 space-y-3 order-2 lg:order-2">
+                <h3
+                  class="font-heading font-extrabold text-2xl sm:text-3xl text-gray-900"
+                >
+                  Adult First Aid/CPR/AED (In-Person &amp; Hybrid)
+                </h3>
+                <p
+                  class="font-body text-gray-800 text-base sm:text-lg leading-relaxed"
+                >
+                  This comprehensive course covers a wide range of adult medical
+                  emergencies, equipping individuals with the skills to respond
+                  effectively. This training also provides a two-year American
+                  Red Cross certification and is ideal for anyone wanting to be
+                  prepared for adult-focused emergencies. On-site training is
+                  also available for agencies looking to certify their
+                  adult-focused staff.
+                </p>
+              </div>
+            </div>
+            <!-- Service 3: Subheader/Text on Left, Image on Right -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8 border-t border-gray-200/80"
+            >
+              <div class="lg:col-span-7 space-y-3 order-1 lg:order-1">
+                <h3
+                  class="font-heading font-extrabold text-2xl sm:text-3xl text-gray-900"
+                >
+                  Pediatric First Aid/CPR/AED (In-Person &amp; Hybrid)
+                </h3>
+                <p
+                  class="font-body text-gray-800 text-base sm:text-lg leading-relaxed"
+                >
+                  This in-depth program focuses specifically on the medical
+                  needs of infants and children, covering a wide range of
+                  emergencies from choking emergencies to more serious
+                  situations. This training provides a two-year American Red
+                  Cross certification and is essential for parents, caregivers,
+                  teachers, and anyone responsible for a child's well-being.
+                  On-site training is also available for agencies and
+                  organizations working with children.
+                </p>
+              </div>
+              <div class="lg:col-span-5 order-2 lg:order-2">
+                <img
+                  alt="Adult CPR practice session"
+                  class="uncropped-photo img-frame"
+                  src="assets/services-photo-1.jpeg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 6. CONTACT US SECTION -->
+        <section
+          class="py-12 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
+          id="contact-us"
+        >
+          <div class="glass-card p-6 sm:p-10 md:p-12">
+            <div class="text-center mb-8">
+              <h2
+                class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-4"
+                style="color: #4166f5"
+              >
+                Contact Us
+              </h2>
+              <!-- Three lines of larger paragraph text -->
+              <div
+                class="space-y-1.5 font-heading text-lg sm:text-xl font-medium text-gray-800"
+              >
+                <p class="italic text-gray-700">
+                  “I don’t want to fill out a long form, I just want to contact
+                  you.”
+                </p>
+                <p class="font-semibold text-gray-900">
+                  Not a problem! Just fill out the Contact Form.
+                </p>
+                <p class="text-blue-700 font-bold">
+                  We are looking forward to connecting with you!
+                </p>
+              </div>
+            </div>
+            <!-- Quick Contact Form -->
+            <form class="space-y-5" id="quickContactForm">
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact Form Message"
+              />
+              <p
+                class="form-status"
+                data-form-status
+                aria-live="polite"
+                role="status"
+                hidden
+              ></p>
+              <!-- Name required prompt with First & Last Name sub-prompts -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-1.5"
+                >
+                  Name: <span class="text-red-500">*</span>
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      class="block font-body text-sm text-gray-600 mb-1"
+                      for="contact-first-name"
+                      >First Name:</label
+                    >
+                    <input
+                      class="form-input"
+                      id="contact-first-name"
+                      name="first_name"
+                      placeholder="Jane"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block font-body text-sm text-gray-600 mb-1"
+                      for="contact-last-name"
+                      >Last Name:</label
+                    >
+                    <input
+                      class="form-input"
+                      id="contact-last-name"
+                      name="last_name"
+                      placeholder="Doe"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Email required prompt -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-1"
+                  for="contact-email"
+                >
+                  Email: <span class="text-red-500">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  id="contact-email"
+                  name="email"
+                  placeholder="jane.doe@example.com"
+                  required=""
+                  type="email"
+                />
+              </div>
+              <!-- Message required prompt -->
+              <div>
+                <label
+                  class="block font-heading font-bold text-gray-800 text-base mb-1"
+                  for="contact-message"
+                >
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <textarea
+                  class="form-input"
+                  id="contact-message"
+                  name="message"
+                  placeholder="How can we help you?"
+                  required=""
+                  rows="4"
+                ></textarea>
+              </div>
+              <!-- Send button justified to center -->
+              <div class="flex justify-center pt-2">
+                <button
+                  class="btn-submit px-10 py-3 text-lg cursor-pointer"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- ==================== FOOTER ==================== -->
+        <footer
+          class="mt-12 bg-white/90 backdrop-blur-md border-t border-white/60 py-10 px-4 sm:px-6 lg:px-8"
+          id="footer"
+        >
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center"
+          >
+            <!-- Left: Hours -->
+            <div class="md:text-left space-y-1">
+              <h4
+                class="font-heading font-bold text-lg text-gray-900 uppercase tracking-wider"
+              >
+                Hours
+              </h4>
+              <p class="font-body text-gray-700 text-base">Monday — Saturday</p>
+              <p class="font-body text-gray-700 text-base font-medium">
+                10 AM — 6 PM
+              </p>
+            </div>
+            <!-- Middle: 4 Social Media Clickable Icons -->
+            <div class="flex items-center justify-center space-x-6">
+              <!-- Facebook -->
+              <a
+                class="w-11 h-11 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all transform hover:scale-110 shadow-sm"
+                href="https://www.facebook.com/b2bcomcpr/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  data-lucide="facebook"
+                  class="lucide lucide-facebook w-5 h-5"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                class="w-11 h-11 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all transform hover:scale-110 shadow-sm"
+                href="https://www.instagram.com/b2bcomcpr/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  data-lucide="instagram"
+                  class="lucide lucide-instagram w-5 h-5"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <!-- Threads -->
+              <a
+                class="w-11 h-11 rounded-full bg-gray-100 text-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition-all transform hover:scale-110 shadow-sm"
+                href="https://www.threads.com/@b2bcomcpr"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Threads"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  data-lucide="at-sign"
+                  class="lucide lucide-at-sign w-5 h-5"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path>
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a
+                class="w-11 h-11 rounded-full bg-blue-50 text-blue-700 flex items-center justify-center hover:bg-blue-700 hover:text-white transition-all transform hover:scale-110 shadow-sm"
+                href="https://www.linkedin.com/in/b2bcomcpr"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  data-lucide="linkedin"
+                  class="lucide lucide-linkedin w-5 h-5"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+            <!-- Right: Contact -->
+            <div class="md:text-right space-y-1">
+              <h4
+                class="font-heading font-bold text-lg text-gray-900 uppercase tracking-wider"
+              >
+                Contact
+              </h4>
+              <p class="font-body text-base">
+                <a
+                  class="text-gray-700 hover:text-blue-600 transition-colors"
+                  href="mailto:kayla@b2bcpr.net"
+                  >kayla@b2bcpr.net</a
+                >
+              </p>
+              <p class="font-body text-base">
+                <a
+                  class="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  href="tel:8572617839"
+                  >857-261-7839</a
+                >
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- ==================== SUB-FOOTER ==================== -->
+        <section
+          class="bg-gray-900 text-gray-200 py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800"
+        >
+          <div class="max-w-5xl mx-auto space-y-16">
+            <!-- 1. Privacy Policy Section -->
+            <div class="space-y-4" id="privacy-policy">
+              <h3
+                class="font-heading font-black text-2xl sm:text-3xl text-white border-b border-gray-700 pb-3"
+              >
+                Privacy Policy
+              </h3>
+              <p class="font-body text-gray-300 text-base leading-relaxed">
+                At Breathe to the Beat Community CPR LLC, we are committed to
+                protecting the privacy and confidentiality of the personal
+                information of our customers and website visitors. This Privacy
+                Policy outlines how we collect, use, disclose, and safeguard
+                your personal information. By accessing our website or using our
+                services, you consent to the practices described in this policy.
+              </p>
+              <div
+                class="font-body text-gray-300 text-sm sm:text-base space-y-4 leading-relaxed bg-gray-800/60 p-6 rounded-xl border border-gray-700"
+              >
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    1. Information We Collect
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    <strong>a. Personal Information:</strong> When you register
+                    for our CPR training courses or use our services, we may
+                    collect personal information, such as your name, address,
+                    email address, phone number, and other identifying
+                    information.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b. Payment Information:</strong> If you make
+                    payments for our services, we may collect payment
+                    information, including credit card details, billing address,
+                    and other relevant payment details using Intuit Quickbooks.
+                    More information about Intuit privacy procedures can be
+                    found here:
+                    <a
+                      class="text-sky-400 underline"
+                      href="https://www.intuit.com/privacy/statement/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >https://www.intuit.com/privacy/statement/</a
+                    >
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>c. Website Usage:</strong> We may collect
+                    non-personal information about your interaction with our
+                    website, such as IP address, browser type, operating system,
+                    and pages visited. This information is used for analytical
+                    purposes and to improve our website's functionality.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    2. Use of Information:
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    <strong>a.</strong> We use your personal information to
+                    provide and manage our CPR, AED, and First Aid training
+                    services, process payments, issue certifications, and
+                    communicate with you about your training sessions
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b.</strong> We may use your email address to send
+                    you promotional materials, newsletters, or updates about our
+                    services, but only if you have provided your explicit
+                    consent to receive such communications
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>c.</strong> Non-personal information collected
+                    through website usage is used to analyze trends, track user
+                    activity, and improve our website's performance.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    3. Disclosure of Information:
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    <strong>a.</strong> We share your personal information with
+                    third-party service providers (i.e. American Red Cross,
+                    Squarespace, Quickbooks) who assist us in delivering our
+                    CPR, AED, and First Aid training services, processing
+                    payments, and managing our website
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b.</strong> We may disclose your personal
+                    information as required by law or in response to a legal
+                    request, such as a court order or subpoena.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    4. Security Measures:
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    <strong>a.</strong> We implement appropriate technical and
+                    organizational measures to protect your personal information
+                    from unauthorized access, disclosure, or alteration.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b.</strong> While we strive to protect your
+                    information, no method of data transmission over the
+                    internet or electronic storage is entirely secure. We cannot
+                    guarantee the absolute security of your information.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    5. Third-Party Links:
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    Our website may contain links to third-party websites. We
+                    are not responsible for the privacy practices or content of
+                    these external sites. We encourage you to review the privacy
+                    policies of those websites before providing any personal
+                    information.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    6. Children's Privacy:
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    As long as a child can perform effective chest compressions,
+                    said child(ren) can be trained in CPR, AED, and First Aid.
+                    No child under 14 years of age will be issued a certificate.
+                    We do not knowingly collect personal information from
+                    children under 18 without the verbal or written expression
+                    of consent from child’s parent/guardian. If we become aware
+                    that we have collected personal information from a child
+                    under 18 without parental consent, we will take steps to
+                    delete such information promptly.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    7. Changes to the Privacy Policy:
+                  </h4>
+                  <p class="pl-4 mt-1">
+                    We reserve the right to update and modify this Privacy
+                    Policy from time to time. Any changes to this policy will be
+                    posted on our website within 48 hours of said changes. By
+                    continuing to use our services after the changes become
+                    effective, you agree to be bound by the revised Privacy
+                    Policy.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">8. Contact Us:</h4>
+                  <p class="pl-4 mt-1">
+                    If you have any questions, concerns, or requests regarding
+                    our Privacy Policy or the handling of your personal
+                    information, please contact us at
+                    <a
+                      class="text-sky-400 underline"
+                      href="mailto:kayla@b2bcpr.net"
+                      >kayla@b2bcpr.net</a
+                    >.
+                  </p>
+                </div>
+                <div class="pt-2 text-gray-400 text-sm">
+                  <p>Updated Date: September 3, 2026</p>
+                  <p class="italic mt-1">
+                    ***By accessing our website or using our services, you
+                    acknowledge that you have read, understood, and agreed to
+                    this Privacy Policy. We recommend that you review this
+                    policy periodically for any updates or changes.***
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2. Refund Policy Section -->
+            <div class="space-y-4" id="refund-policy">
+              <h3
+                class="font-heading font-black text-2xl sm:text-3xl text-white border-b border-gray-700 pb-3"
+              >
+                Refund Policy
+              </h3>
+              <h4 class="font-heading font-bold text-xl text-sky-300">
+                Breathe to the Beat Community CPR Refund Policy
+              </h4>
+              <p class="font-body text-gray-300 text-base leading-relaxed">
+                Thank you for choosing Breathe to the Beat Community CPR LLC for
+                your CPR, AED, and First Aid training needs. We strive to
+                provide the best possible experience for our customers. Our
+                refund policy is designed to be fair and transparent. Please
+                read the following refund policy carefully:
+              </p>
+              <div
+                class="font-body text-gray-300 text-sm sm:text-base space-y-4 leading-relaxed bg-gray-800/60 p-6 rounded-xl border border-gray-700"
+              >
+                <div>
+                  <h5 class="font-bold text-white text-base">
+                    1. Cancellation by Participants:
+                  </h5>
+                  <p class="pl-4 mt-1">
+                    <strong>a. Full Refund:</strong> Participants who wish to
+                    cancel their enrollment must notify us in writing or by
+                    email at least 1 day (24 hours) before the scheduled
+                    training session. In such cases, we will issue a full refund
+                    of the course fee.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b. No Refund:</strong> No refund will be provided
+                    for cancellations made less than 1 day (24 hours) before the
+                    scheduled training session or for participants who fail to
+                    attend the training without prior notice.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="font-bold text-white text-base">
+                    2. Rescheduling:
+                  </h5>
+                  <p class="pl-4 mt-1">
+                    <strong>a.</strong> Participants may request to reschedule
+                    their CPR training session at least 2 days (48 hours) before
+                    the original scheduled date, subject to availability. There
+                    will be no additional charge for rescheduling.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b.</strong> Rescheduling requests made less than 1
+                    day before the original scheduled date may not be
+                    accommodated, and participants may be subject to our
+                    standard cancellation policy.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="font-bold text-white text-base">
+                    3. Cancellation by Breathe to the Beat Community CPR LLC:
+                  </h5>
+                  <p class="pl-4 mt-1">
+                    <strong>a.</strong> In the unlikely event that we need to
+                    cancel or reschedule a training session due to unforeseen
+                    circumstances or insufficient enrollment, participants will
+                    be notified as soon as possible.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b.</strong> In such cases, participants will have
+                    the option to receive a full refund or to reschedule their
+                    training session at no additional cost.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="font-bold text-white text-base">
+                    4. Refund Processing:
+                  </h5>
+                  <p class="pl-4 mt-1">
+                    <strong>a.</strong> Refunds will be processed within 10
+                    business days of receiving the refund request.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b.</strong> Refunds will be issued using the same
+                    method of payment used for the original transaction. If the
+                    payment was made via credit card, every effort will be made
+                    to credit the refund to the same credit card.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="font-bold text-white text-base">
+                    5. Non-Refundable Items:
+                  </h5>
+                  <p class="pl-4 mt-1">
+                    <strong>a. Online Courses:</strong> Fees for online CPR
+                    training courses are non-refundable once the course access
+                    has been granted.
+                  </p>
+                  <p class="pl-4 mt-1">
+                    <strong>b. Course Materials:</strong> Course manuals,
+                    training materials, and certification cards are
+                    non-refundable once provided to the participant.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="font-bold text-white text-base">6. Contact Us:</h5>
+                  <p class="pl-4 mt-1">
+                    If you have any questions or concerns regarding our refund
+                    policy, please feel free to call us at
+                    <a class="text-sky-400 font-bold" href="tel:8572617839"
+                      >857-261-7839</a
+                    >
+                    or emailing
+                    <a
+                      class="text-sky-400 font-bold"
+                      href="mailto:kayla@b2bcpr.net"
+                      >kayla@b2bcpr.net</a
+                    >. Please allow 48 hours for response to email.
+                  </p>
+                </div>
+                <div class="pt-2 text-gray-400 text-sm">
+                  <p>
+                    By enrolling in our CPR, AED, and First Aid training
+                    courses, you acknowledge that you have read, understood, and
+                    agreed to our refund policy. We recommend that you carefully
+                    review the policy before registering for our services.
+                  </p>
+                  <p class="mt-1 font-semibold text-gray-300">
+                    Updated Date: September 3, 2026
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Community Resources Section -->
+            <div class="space-y-6" id="community-resources">
+              <h3
+                class="font-heading font-black text-2xl sm:text-3xl text-white border-b border-gray-700 pb-3"
+              >
+                Community Resources
+              </h3>
+              <p class="font-body text-gray-300 text-base leading-relaxed">
+                Given the current political climate and the heightened risks
+                faced by marginalized and vulnerable communities, we are
+                committed to supporting those in need. Below is a list of
+                valuable community resources available in Somerville and the
+                surrounding areas. If you are looking for additional resources
+                not listed here, please feel free to reach out, and we will do
+                our best to add the resource to the list!
+              </p>
+              <p
+                class="font-body italic text-gray-400 text-sm bg-gray-800 p-4 rounded-lg border-l-4 border-yellow-500"
+              >
+                Please note: The resources listed are provided for informational
+                purposes only. While every effort is made to ensure their
+                accuracy, Breathe to the Beat Community CPR is not responsible
+                for the services provided by these organizations. We encourage
+                you to verify details directly with the respective resource.
+              </p>
+              <!-- 3.1 Mental Health Crisis Resources -->
+              <div class="space-y-4">
+                <h4
+                  class="font-heading font-bold text-xl text-sky-300 flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    data-lucide="heart"
+                    class="lucide lucide-heart w-5 h-5 text-rose-400"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                  Mental Health Crisis Resources
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Massachusetts Behavioral Health Access (MBHAccess)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Anyone in
+                      a mental health crisis
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18006404085"
+                        >1-800-640-4085 (24/7)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://MBHAccess.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >MBHAccess.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      National Suicide Prevention Lifeline
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals experiencing suicidal thoughts or mental
+                      health crises
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400 font-bold" href="tel:988"
+                        >988 (24/7)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://988lifeline.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >988lifeline.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      The Samaritans of Massachusetts
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals in emotional distress or suicidal crisis
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:8778704673"
+                        >877-870-HOPE (4673) (24/7)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Text:</span> Text "START" to
+                      88788
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://samaritanshope.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >samaritanshope.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Emergency Services Program (ESP) - Cambridge Health
+                      Alliance
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals in crisis (mental health or substance use)
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18772464357"
+                        >1-877-CHN-HELP (1-877-246-4357)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://challiance.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >challiance.org</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3.2 Domestic Violence Resources -->
+              <div class="space-y-4">
+                <h4
+                  class="font-heading font-bold text-xl text-sky-300 flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    data-lucide="shield"
+                    class="lucide lucide-shield w-5 h-5 text-amber-400"
+                  >
+                    <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                    ></path>
+                  </svg>
+                  Domestic Violence Resources
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      National Domestic Violence Hotline
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals experiencing domestic violence
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18007997233"
+                        >1-800-799-7233 (1-800-799-SAFE) (24/7)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Text:</span> Text "START" to
+                      88788
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://thehotline.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >thehotline.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      SafeLink (Massachusetts Domestic Violence Hotline)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Victims
+                      of domestic violence in Massachusetts
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18777852020"
+                        >1-877-785-2020 (24/7)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://safehelpline.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >safehelpline.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      CASPAR (Cambridge and Somerville Program for Alcoholism
+                      and Drug Abuse, Inc.)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Survivors
+                      of domestic violence and individuals with substance use
+                      disorders
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:6178648140"
+                        >617-864-8140</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://caspar.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >caspar.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Somerville Domestic Violence Ended (DVED)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Survivors
+                      of domestic violence in Somerville
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:6176235900"
+                        >617-623-5900</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://somedved.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >somedved.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm md:col-span-2"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Child SA Prevention &amp; Support Guide
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Children
+                      who have experienced abuse often face significant mental
+                      health challenges, including anxiety, depression, PTSD,
+                      and difficulties with trust and emotional regulation.
+                      Early recognition and compassionate support are essential
+                      for their healing and long-term wellbeing
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:8663118640"
+                        >866-311-8640</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="http://victimscivilattorneys.com/survivors-guide/prevention-support/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >http://victimscivilattorneys.com/survivors-guide/prevention-support/</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3.3 Substance Use Resources -->
+              <div class="space-y-4">
+                <h4
+                  class="font-heading font-bold text-xl text-sky-300 flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    data-lucide="life-buoy"
+                    class="lucide lucide-life-buoy w-5 h-5 text-indigo-400"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.93 4.93 4.24 4.24"></path>
+                    <path d="m14.83 9.17 4.24-4.24"></path>
+                    <path d="m14.83 14.83 4.24 4.24"></path>
+                    <path d="m9.17 14.83-4.24 4.24"></path>
+                    <circle cx="12" cy="12" r="4"></circle>
+                  </svg>
+                  Substance Use Resources
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      National Helpline for Substance Use and Mental Health
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals dealing with substance use disorders
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18006624357"
+                        >1-800-662-HELP (4357)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://findtreatment.samhsa.gov"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >findtreatment.samhsa.gov</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Cambridge Health Alliance Substance Use Treatment
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals with substance use disorders
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:6175916060"
+                        >617-591-6060</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://challiance.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >challiance.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Somerville Office of Prevention and Outreach
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals dealing with substance use and the general
+                      community
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:6176256600"
+                        >617-625-6600 x 2670</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://somervillema.gov"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >somervillema.gov</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Phoenix House
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals seeking treatment for substance use disorder
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18003784435"
+                        >1-800-DRUG-HELP (378-4435)</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://phoenixhouse.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >phoenixhouse.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Revolution Recovery (Boston Area)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals struggling with substance use
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:18552529199"
+                        >1-855-252-9199</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://revolutionrecovery.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >revolutionrecovery.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Bay Cove Human Services - Opioid Treatment Program
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals struggling with opioid use disorder
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:6173713000"
+                        >617-371-3000</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://baycove.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >baycove.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm md:col-span-2"
+                  >
+                    <h5 class="font-bold text-white text-base">RehabNet</h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Individuals and families find accredited substance use
+                      treatment and recover support
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Phone:</span>
+                      <a class="text-sky-400" href="tel:8666181141"
+                        >866-618-1141</a
+                      >
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://rehabnet.com/massachusetts/somerville/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >https://rehabnet.com/massachusetts/somerville/</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3.4 General Support & Community Resources -->
+              <div class="space-y-4">
+                <h4
+                  class="font-heading font-bold text-xl text-sky-300 flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    data-lucide="users"
+                    class="lucide lucide-users w-5 h-5 text-teal-400"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                  </svg>
+                  General Support &amp; Community Resources
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Somerville-Cambridge Elder Services (SCES)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Older
+                      adults, individuals with disabilities
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Home care
+                      services, caregiver support, community programs.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://sces.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >sces.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      The Somerville Homeless Coalition
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Homeless
+                      individuals and families
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Emergency
+                      shelter, housing stabilization, and homelessness
+                      prevention.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://shcinc.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >shcinc.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Cambridge &amp; Somerville Legal Services (CASLS)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Low-income individuals, especially facing housing
+                      insecurity, domestic violence, or immigration issues
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Free legal
+                      services, including eviction defense and immigration
+                      support.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://clsacc.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >clsacc.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      The Welcome Project
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Immigrant
+                      communities
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Civic
+                      engagement, language access, legal support, community
+                      organizing.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://welcomeproject.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >welcomeproject.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Somerville Community Corporation (SCC)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Low-income families, people of color, immigrant
+                      communities
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Affordable
+                      housing development, community organizing, advocacy.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://somervillecdc.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >somervillecdc.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Cambridge Health Alliance – Multicultural Health Center
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Marginalized communities, immigrants, and refugees
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Health care,
+                      mental health services, substance use treatment, and
+                      outreach.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://challiance.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >challiance.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Youth on Fire
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Homeless
+                      and at-risk youth
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Emergency
+                      shelter, support services, and life skills training.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://youthonfire.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >youthonfire.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Tufts Medical Center – Center for Community Health and
+                      Equity
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Low-income populations and communities of color
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Health
+                      resources, community wellness programs, and access to
+                      care.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://tuftsmedicalcenter.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >tuftsmedicalcenter.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      MassHire Greater Boston Workforce Board
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Job
+                      seekers, especially marginalized communities
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Job training,
+                      placement assistance, and career development.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://masshiregbwb.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >masshiregbwb.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      The Women’s Center
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Survivors
+                      of domestic violence, sexual assault, and trafficking
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Emergency
+                      shelter, legal advocacy, therapy, and support services.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://womenscenteronline.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >womenscenteronline.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      The Refugee and Immigrant Assistance Center (RIAC)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Refugees,
+                      immigrants, and asylum seekers
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Legal
+                      assistance, case management, and cultural integration
+                      programs.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://riacboston.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >riacboston.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Somerville Office of Housing Stability
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Renters,
+                      tenants facing displacement, and low-income households
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Tenant rights
+                      advocacy, rental assistance, eviction prevention.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://somervillema.gov/housing"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >somervillema.gov/housing</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Food For Free
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span>
+                      Low-income families and individuals experiencing food
+                      insecurity
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Healthy food
+                      distribution, mobile food programs, and community
+                      partnerships.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://foodforfree.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >foodforfree.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Somerville Public Library
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Everyone,
+                      with a focus on underserved communities
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Free access
+                      to books, internet, language learning, and various
+                      community programs.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://somervillepubliclibrary.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >somervillepubliclibrary.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Health Resources in Action
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> People of
+                      color, low-income communities, and those with health
+                      disparities
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Public health
+                      programs, mental health support, and family-focused
+                      services.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://www.hriainc.org/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >https://www.hriainc.org/</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      The Boston Area Rape Crisis Center (BARCC)
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> Survivors
+                      of sexual violence
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> 24/7 support,
+                      legal advocacy, therapy, and prevention programs.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://barcc.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >barcc.org</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-800/80 p-4 rounded-lg border border-gray-700 space-y-1 text-sm md:col-span-2"
+                  >
+                    <h5 class="font-bold text-white text-base">
+                      Boston's LGBTQ+ Youth &amp; Family Support Network
+                    </h5>
+                    <p>
+                      <span class="text-gray-400">Who it helps:</span> LGBTQ+
+                      youth and their families
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Services:</span> Community
+                      support groups, mental health services, and advocacy.
+                    </p>
+                    <p>
+                      <span class="text-gray-400">Website:</span>
+                      <a
+                        class="text-emerald-400 underline"
+                        href="https://smartsisters.org"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >smartsisters.org</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Date Updated footnote -->
+              <div class="pt-6 border-t border-gray-800 text-gray-400 text-sm">
+                <p class="italic">Date Updated: September 3, 2026</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- JavaScript for Interactions & Lucide Icons -->
+    <script src="translations.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
