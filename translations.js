@@ -445,6 +445,7 @@ function normalizeTranslationKey(value) {
     .replace(/\u00e2\u20ac\u2122/g, "’")
     .replace(/\u00e2\u20ac\u0153/g, "“")
     .replace(/\u00e2\u20ac\u009d/g, "”")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
